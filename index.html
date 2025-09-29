@@ -1,180 +1,285 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="_css/styles.css" />
     <title>Abner Trindade - Software Dev</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <!-- Toda a seção principal -->
-        <div class="principal">
-            <h1 class="logo">Trindade</h1>
-            <!-- Barra de navegação -->
-            <div class="navbar">
-                <nav>
-                    <ol>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                    </ol>
-                </nav>
-            </div>
-            <!-- Texto principal e secundário -->
-            <div class="text-and-subtext">
-                    <h2 class="text-principal">Desenvolvedor de Software | Transformando Ideias em Código</h2>
-                    <p class="text-secundario">Minha paixão é transformar desafios em código eficiente, criando soluções digitais práticas e inovadoras.</p>
-            </div>
-            <!-- Botão para explorar projetos -->
-            <div class="botao">
-                <div class="container-botao">
-                        <a href="#projetos"><h3 class="text-botao">Explorar Projetos</h3></a>
-                </div>
-            </div>
-        </div>
-        <!-- Fim da seção de Principal -->
+      <!-- Início da seção principal -->
+      <section class="principal" id="home" aria-label="Página inicial">
+        <header class="site-header">
+          <div class="logo">Trin<span class="text-white">dade</span></div>
 
-        <!-- Toda a seção de projetos -->
-        <div class="projetos">
-            <!-- Container para os projetos -->
-            <div class="container-projetos">
-                <h1 class="titulo">
-                    Projetos
-                </h1>
-                <div class="navbar">
-                    <nav>
-                        <ol>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#projetos">Projetos</a></li>
-                            <li><a href="#sobre">Sobre</a></li>
-                            <li><a href="#contato">Contato</a></li>
-                        </ol>
-                    </nav>
-                </div>
-                <!-- Container para os cards dos projetos -->
-                <div class="cards">
-                    <div class="card">
-                        <img src="projeto1.jpg" alt="Projeto 1" class="thumbnail-card">
-                        <h2 class="titulo-card">Projeto 1</h2>
-                        <p class="descricao-card">Descrição breve do projeto 1.</p>
-                        <!-- Ícone das tecnologias utilizadas -->
-                        <div class="icones-tecnologias">
-                            <img src="html-icon.png" alt="HTML" class="icone-tecnologia">
-                            <img src="css-icon.png" alt="CSS" class="icone-tecnologia">
-                            <img src="js-icon.png" alt="JavaScript" class="icone-tecnologia">
-                        </div>
-                        <a href="#" class="link-card">Ver Projeto</a>
-                    </div>
-                    <div class="card">
-                        <img src="projeto2.jpg" alt="Projeto 2" class="thumbnail-card">
-                        <h2 class="titulo-card">Projeto 2</h2>
-                        <p class="descricao-card">Descrição breve do projeto 2.</p>
-                        <!-- Ícone das tecnologias utilizadas -->
-                        <div class="icones-tecnologias">
-                            <img src="html-icon.png" alt="HTML" class="icone-tecnologia">
-                            <img src="css-icon.png" alt="CSS" class="icone-tecnologia">
-                            <img src="js-icon.png" alt="JavaScript" class="icone-tecnologia">
-                        </div>
-                        <a href="#" class="link-card">Ver Projeto</a>
-                    </div>
-                    <div class="card">
-                        <img src="projeto3.jpg" alt="Projeto 3" class="thumbnail-card">
-                        <h2 class="titulo-card">Projeto 3</h2>
-                        <p class="descricao-card">Descrição breve do projeto 3.</p>
-                        <!-- Ícone das tecnologias utilizadas -->
-                        <div class="icones-tecnologias">
-                            <img src="html-icon.png" alt="HTML" class="icone-tecnologia">
-                            <img src="css-icon.png" alt="CSS" class="icone-tecnologia">
-                            <img src="js-icon.png" alt="JavaScript" class="icone-tecnologia">
-                        </div>
-                        <a href="#" class="link-card">Ver Projeto</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Fim da seção de projetos -->
-         
-        <!-- Toda a seção sobre -->
-        <div class="container-sobre">
-            <div class="container-sobre">
-                <h1 class="titulo-sobre">Sobre Mim</h1>
-                <h1 class="repli-titulo-sobre">bre M</h1>
-                <img src="minha-foto.jpg" alt="Minha Foto" class="foto-sobre">
-                <div class="navbar">
-                    <nav>
-                        <ol>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#projetos">Projetos</a></li>
-                            <li><a href="#sobre">Sobre</a></li>
-                            <li><a href="#contato">Contato</a></li>
-                        </ol>
-                    </nav>
-                </div>
-                <div class="conteudo-sobre">
-                    <h3 class="titulo">Minha Trajetória</h3>
-                    <p class="descricao-sobre">
-                        Minha jornada como desenvolvedor é guiada por uma filosofia simples: Transformar complexidade em clareza. Não se trata apenas de escrever código; trata-se de arquitetar soluções digitais performáticas e escaláveis que realmente resolvam problemas de negócios. Eu me dedico a unir a criatividade do design com a precisão da engenharia, garantindo que cada linha de código contribua para uma experiência de usuário impecável.
-                    </p>
-                    <h3 class="titulo">Stacks</h3>
-                    <div class="stacks">
-                        <div class="stacks-front">
-                            <h4 class="subtitulo">Front-End</h4>
-                            <ul class="lista-stacks">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>React</li>
-                                <li>Figma</li>
-                            </ul>
-                        </div>
-                        <div class="stacks-back">
-                            <h4 class="subtitulo">Back-End</h4>
-                            <ul class="lista-stacks">
-                                <li>JavaScript</li>
-                                <li>PHP</li>
-                                <li>Python</li>
-                            </ul>
-                        </div>
-                        <div class="stacks-database">
-                            <h4 class="subtitulo">Database</h4>
-                            <ul class="lista-stacks">
-                                <li>MySQL</li>
-                                <li>PostgreSQL</li>
-                                <li>MongoDB</li>
-                            </ul>
-                        </div>
-                        <div class="stacks-devops">
-                            <h4 class="subtitulo">DevOps</h4>
-                            <ul class="lista-stacks">
-                                <li>Git</li>
-                                <li>GitHub</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Fim da seção sobre -->
+          <nav class="navbar" role="navigation" aria-label="Menu principal">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </nav>
+        </header>
 
-        <!-- Toda a seção de contato -->
-        <div class="container-contato">
-            <div class="contato">
-                <h1 class="titulo-contato">Contato</h1>
-                <h3 class="subtitulo">Vamos Conversar! Entre em contato comigo pelas redes sociais ou por e-mail</h3>
-                <div class="redes-contato">
-                    <img src="github.png" alt="GitHub"><a href="https://github.com/seu-perfil">GitHub</a>
-                    <img src="linkedin.png" alt="LinkedIn"><a href="https://www.linkedin.com/in/seu-perfil">LinkedIn</a>
-                    <img src="email.png" alt="Email"><a href="mailto:seu-email@example.com">seu-email@example.com</a>
-                </div>
-            </div>
+        <div class="text-and-subtext">
+          <h1 class="text-principal">
+            Desenvolvedor de <span>Software</span> | Transformando
+            <span>Ideias</span> em Código
+          </h1>
+          <p class="text-secundario">
+            Minha paixão é transformar desafios em código eficiente, criando
+            soluções digitais práticas e inovadoras.
+          </p>
         </div>
-        <!-- Fim da seção de contato -->
-        <div class="container-footer">
-            <div class="footer">
-                <p>&copy; 2025 Abner Trindade. Todos os direitos reservados.</p>
-            </div>
+
+        <div class="botao">
+          <a
+            href="#projetos"
+            class="container-botao"
+            role="button"
+            tabindex="0"
+          >
+            <span class="text-botao">Explorar Projetos</span>
+          </a>
         </div>
+      </section>
+      <!-- Fim da seção principal -->
+      <!-- Início dos projetos -->
+      <section
+        class="projetos"
+        id="projetos"
+        aria-label="Projetos desenvolvidos"
+      >
+        <div class="container-projetos">
+          <h2 class="titulo" tabindex="0">Projetos</h2>
+
+          <button
+            class="menu-hamburguer"
+            id="menu-icon"
+            aria-label="Toggle Menu"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+          >
+            <span class="barra"></span>
+          </button>
+
+          <nav class="menu-navegacao" id="mobile-nav">
+            <ul>
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#projetos">PROJETOS</a></li>
+              <li><a href="#sobre">SOBRE</a></li>
+              <li><a href="#contato">CONTATO</a></li>
+            </ul>
+          </nav>
+
+          <div class="cards">
+            <article class="card" tabindex="0">
+              <img
+                src="projeto1.jpg"
+                alt="Imagem ilustrativa do Projeto 1"
+                class="thumbnail-card"
+              />
+              <h3 class="titulo-card">Projeto 1</h3>
+              <p class="descricao-card">Descrição breve do projeto 1.</p>
+              <div
+                class="icones-tecnologias"
+                aria-label="Tecnologias utilizadas no Projeto 1"
+              >
+                <img src="html-icon.png" alt="HTML" class="icone-tecnologia" />
+                <img src="css-icon.png" alt="CSS" class="icone-tecnologia" />
+                <img
+                  src="js-icon.png"
+                  alt="JavaScript"
+                  class="icone-tecnologia"
+                />
+              </div>
+              <a href="#" class="link-card" aria-label="Ver Projeto 1"
+                >Ver Projeto</a
+              >
+            </article>
+
+            <article class="card" tabindex="0">
+              <img
+                src="projeto2.jpg"
+                alt="Imagem ilustrativa do Projeto 2"
+                class="thumbnail-card"
+              />
+              <h3 class="titulo-card">Projeto 2</h3>
+              <p class="descricao-card">Descrição breve do projeto 2.</p>
+              <div
+                class="icones-tecnologias"
+                aria-label="Tecnologias utilizadas no Projeto 2"
+              >
+                <img src="html-icon.png" alt="HTML" class="icone-tecnologia" />
+                <img src="css-icon.png" alt="CSS" class="icone-tecnologia" />
+                <img
+                  src="js-icon.png"
+                  alt="JavaScript"
+                  class="icone-tecnologia"
+                />
+              </div>
+              <a href="#" class="link-card" aria-label="Ver Projeto 2"
+                >Ver Projeto</a
+              >
+            </article>
+
+            <article class="card" tabindex="0">
+              <img
+                src="projeto3.jpg"
+                alt="Imagem ilustrativa do Projeto 3"
+                class="thumbnail-card"
+              />
+              <h3 class="titulo-card">Projeto 3</h3>
+              <p class="descricao-card">Descrição breve do projeto 3.</p>
+              <div
+                class="icones-tecnologias"
+                aria-label="Tecnologias utilizadas no Projeto 3"
+              >
+                <img src="html-icon.png" alt="HTML" class="icone-tecnologia" />
+                <img src="css-icon.png" alt="CSS" class="icone-tecnologia" />
+                <img
+                  src="js-icon.png"
+                  alt="JavaScript"
+                  class="icone-tecnologia"
+                />
+              </div>
+              <a href="#" class="link-card" aria-label="Ver Projeto 3"
+                >Ver Projeto</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Fim dos projetos -->
+
+      <!-- Início do sobre -->
+      <section
+        class="container-sobre"
+        id="sobre"
+        aria-label="Sobre Abner Trindade"
+      >
+        <!-- Texto atrás da foto -->
+        <div class="titulo-above-circle" aria-hidden="true">BRE M</div>
+
+        <!-- Foto circular -->
+        <img
+          src="_img/fto.png"
+          alt="Foto de Abner Trindade"
+          class="foto-sobre"
+        />
+
+        <!-- Título principal "Sobre Mim" abaixo da foto -->
+        <h2 class="titulo-sobre" tabindex="0">Sobre Mim</h2>
+
+        <div class="conteudo-sobre">
+          <h3 class="titulo" tabindex="0">Minha Trajetória</h3>
+          <p class="descricao-sobre">
+            Minha jornada como desenvolvedor é guiada por uma filosofia simples:
+            <span class="destaque">Transformar complexidade em clareza.</span>
+            Não se trata apenas de escrever código; trata-se de arquitetar
+            soluções digitais performáticas e escaláveis que realmente resolvam
+            problemas de negócios. Eu me dedico a unir a criatividade do design
+            com a precisão da engenharia, garantindo que
+            <span class="destaque"
+              >cada linha de código contribua para uma experiência de usuário
+              impecável.</span
+            >
+          </p>
+
+          <h3 class="titulo" tabindex="0">Stacks</h3>
+          <div class="stacks">
+            <div class="stacks-front">
+              <h4 class="subtitulo" tabindex="0">Front-End</h4>
+              <ul class="lista-stacks">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Figma</li>
+              </ul>
+            </div>
+            <div class="stacks-back">
+              <h4 class="subtitulo" tabindex="0">Back-End</h4>
+              <ul class="lista-stacks">
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Python</li>
+              </ul>
+            </div>
+            <div class="stacks-database">
+              <h4 class="subtitulo" tabindex="0">Database</h4>
+              <ul class="lista-stacks">
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+            <div class="stacks-devops">
+              <h4 class="subtitulo" tabindex="0">DevOps</h4>
+              <ul class="lista-stacks">
+                <li>Git</li>
+                <li>GitHub</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fim do sobre -->
+
+      <!-- Início do contato -->
+      <section
+        class="container-contato"
+        id="contato"
+        aria-label="Informações de contato"
+      >
+        <div class="contato">
+          <h2 class="titulo-contato" tabindex="0">Contato</h2>
+          <h3 class="subtitulo" tabindex="0">
+            Vamos Conversar! Entre em contato comigo pelas redes sociais ou por
+            e-mail
+          </h3>
+          <div class="redes-contato">
+            <a
+              href="https://github.com/seu-perfil"
+              aria-label="GitHub de Abner Trindade"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="github.png" alt="Logo do GitHub" />
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/seu-perfil"
+              aria-label="LinkedIn de Abner Trindade"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="linkedin.png" alt="Logo do LinkedIn" />
+              LinkedIn
+            </a>
+            <a
+              href="mailto:seu-email@example.com"
+              aria-label="Enviar email para Abner Trindade"
+            >
+              <img src="email.png" alt="Ícone de Email" />
+              seu-email@example.com
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Fim do contato -->
+
+      <!-- Início do rodapé -->
+      <footer class="container-footer" role="contentinfo">
+        <div class="footer">
+          <p>&copy; 2025 Abner Trindade. Todos os direitos reservados.</p>
+        </div>
+      </footer>
+      <!-- Fim do rodapé -->
     </div>
-</body>
+
+    <script src="_js/navbar.js"></script>
+  </body>
 </html>
