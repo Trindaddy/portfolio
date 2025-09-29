@@ -1,0 +1,474 @@
+/* Importando Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@500&family=Raleway:wght@700&display=swap');
+
+/* Variáveis CSS */
+:root {
+    /* Cores da Paleta */
+    --color-primary: #5A386C;    /* Púrpura Imperial (Destaque) */
+    --color-accent: #009688;     /* Ciano Profundo (CTA) */
+    --color-background: #333333; /* Grafite Escuro */
+    --color-text-light: #F8F8F8; /* Branco Off-White */
+    --color-text-dark: #2C3E50;  /* Grafite Profundo */
+
+    /* Tipografia */
+    --font-bebas: 'Bebas Neue', cursive, sans-serif;
+    --font-inter-medium: 'Inter', sans-serif;
+    --font-raleway-bold: 'Raleway', sans-serif;
+    
+    --max-width: 1440px;
+}
+
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo e HTML */
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-inter-medium);
+    background-color: var(--color-background);
+}
+
+/*
+    ======================================
+    1. Home
+    ======================================
+*/
+
+/* Container Principal */
+.principal {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../_img/nebulosa.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: var(--color-text-light);
+    position: relative; /* Necessário para posicionar o menu-hamburguer */
+}
+
+/* Header do Site (Contém Logo e Navegação) */
+.site-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Alinha logo e navbar */
+    align-items: center;
+    padding: 25px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+/* Logo (Agora um div) */
+.logo {
+    font-family: var(--font-bebas); 
+    font-weight: normal;
+    font-size: 3.5em;
+    letter-spacing: 2px;
+    color: var(--color-primary); 
+    user-select: none;
+    transition: color 0.3s ease;
+}
+
+/* Deixar texto branco (A parte "dade" da logo) */
+.text-white {
+    color: var(--color-text-light);
+} 
+
+/* Navbar (Menu Desktop) */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Navegação - lista horizontal (desktop) */
+.navbar ul { /* CORRIGIDO: de 'ol' para 'ul' */
+    display: flex;
+    list-style: none;
+    gap: 10px; 
+    margin: 0; /* Limpa margens */
+    padding: 0; /* Limpa paddings */
+}
+
+/* Links de navegação */
+.navbar ul li a { /* CORRIGIDO: de 'ol' para 'ul' */
+    font-family: var(--font-bebas);
+    font-weight: normal;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: var(--color-text-light);
+    transition: color 0.3s ease;
+    user-select: none;
+}
+
+.navbar ul li a:hover { /* CORRIGIDO: de 'ol' para 'ul' */
+    color: var(--color-primary);
+}
+
+/* Oculta o menu hamburguer no desktop (apenas a versão mobile usa) */
+.menu-hamburguer {
+    display: none; 
+}
+
+
+/* Container do texto principal */
+.text-and-subtext {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 50px; /* Ajuste para não colidir com o menu fixo */
+}
+
+/* Título principal (Agora H1) */
+.text-principal {
+    font-family: var(--font-raleway-bold);
+    font-weight: 700;
+    font-size: 47px;
+    color: var(--color-text-light);
+    line-height: 1.2;
+}
+
+.text-principal span {
+    color: var(--color-accent);
+}
+
+/* Subtítulo */
+.text-secundario {
+    font-family: var(--font-inter-medium);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--color-text-light);
+    max-width: 600px;
+    margin: 0 auto;
+    user-select: none;
+}
+
+/* Botão para explorar projetos */
+.botao {
+    margin-top: 6vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container-botao {
+    /* Removendo 'a' da classe, pois o <a> já é a classe */
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--color-accent);
+    padding: 18px 48px;
+    border-radius: 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    letter-spacing: 1px;
+    margin-bottom: 100px;
+}
+
+/* Texto dentro do botão (Agora um span) */
+.text-botao {
+    font-family: var(--font-bebas);
+    font-weight: normal;
+    font-size: 25px;
+    color: var(--color-text-dark);
+    margin: 0; /* Limpa margens do span */
+}
+
+.container-botao:hover {
+    background-color: #00796B;
+}
+
+.container-botao:hover .text-botao {
+    color: var(--color-text-light);
+}
+
+/*
+    ======================================
+    2. Projetos
+    ======================================
+*/
+
+/* Container geral da seção projetos */
+.projetos {
+    background-color: var(--color-background);
+    padding: 100px 20px;
+    text-align: center;
+    color: var(--color-text-light);
+    font-family: var(--font-inter-medium);
+    position: relative; /* Importante para o posicionamento do menu hamburguer */
+}
+
+/* Título da seção - PROJETOS (Agora H2) */
+.projetos .titulo {
+    font-family: var(--font-bebas);
+    font-weight: 400;
+    font-size: 100px;
+    color: var(--color-primary);
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Container dos cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Card individual */
+.card {
+    background-color: var(--color-text-light);
+    border-radius: 16px;
+    width: 300px;
+    padding: 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-text-dark);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Thumbnail */
+.thumbnail-card {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 24px;
+}
+
+/* Título do Projeto no Card (Agora H3) */
+.card .titulo-card {
+    font-family: var(--font-bebas);
+    font-weight: 400;
+    font-size: 40px;
+    margin: 0 0 8px 0;
+    text-transform: uppercase;
+}
+
+/* Título do projeto "STARBUCKS REDESIGN RESPONSIVO" */
+.descricao-card-title {
+    font-family: var(--font-bebas);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-primary);
+    margin: 0 0 12px 0;
+    text-transform: uppercase;
+}
+
+/* Descrição do projeto */
+.descricao-card {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 24px;
+    color: var(--color-text-dark);
+    text-align: left;
+    width: 100%;
+}
+
+/* Container dos ícones de tecnologias */
+.icones-tecnologias {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+/* Tamanho dos ícones */
+.icone-tecnologia {
+    width: 32px;
+    height: 32px;
+}
+
+/* Botão/link do projeto */
+.link-card {
+    background-color: var(--color-accent);
+    color: var(--color-text-dark);
+    font-family: var(--font-inter-medium);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.link-card:hover {
+    background-color: #00796B;
+    color: var(--color-text-light);
+}
+
+/*
+    ======================================
+    3. Sobre
+    ======================================
+*/
+
+/* Container principal da seção Sobre */
+  .container-sobre {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1rem 6rem;
+    text-align: center;
+    position: relative;
+  }
+
+  /* "bre m" texto grande atrás do círculo e "Sobre Mim" abaixo do círculo */
+  .titulo-above-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 100px;
+    color: var(--purple);
+    user-select: none;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+
+  /* Ajuste do texto "bre m" para parecer duplicado por estar atrás do círculo */
+  .titulo-above-circle::after {
+    content: "BRE M";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--purple);
+  }
+
+  .foto-sobre {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--purple);
+    margin: 6rem auto 2rem;
+    display: block;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Título "Sobre Mim" abaixo do círculo */
+  .titulo-sobre {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 100px;
+    color: var(--purple);
+    margin-top: 0;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 3;
+  }
+
+  /* Títulos subsequentes */
+  .titulo {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 40px;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  .conteudo-sobre {
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .descricao-sobre {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 18px;
+    margin-bottom: 2.5rem;
+    color: #222;
+  }
+
+  .destaque {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 18px;
+    color: var(--purple);
+  }
+
+  /* Stacks container */
+  .stacks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+
+  /* Cada bloco de stack */
+  .stacks-front,
+  .stacks-back,
+  .stacks-database,
+  .stacks-devops {
+    flex: 1 1 200px; /* Responsivo básico */
+    min-width: 180px;
+  }
+
+  .subtitulo {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 40px;
+    margin-bottom: 1rem;
+  }
+
+  .lista-stacks {
+    list-style: none;
+    padding-left: 0;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 30px;
+    color: #111;
+    margin: 0;
+  }
+
+  .lista-stacks li {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Ajuste para acessibilidade e foco (tabindex) */
+  .titulo-sobre:focus,
+  .titulo:focus,
+  .subtitulo:focus {
+    outline: 3px solid var(--purple);
+    outline-offset: 3px;
+  }
+
+
+/*
+    ======================================
+    4. Contato
+    ======================================
+*/
